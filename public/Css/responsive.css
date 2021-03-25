@@ -1,0 +1,227 @@
+@media only screen and (max-width: 1100px) {
+	.NavSection .Navbar .SiteLogo{
+		left: 50px;
+		/*position: absolute;*/
+	}
+	.NavSection .Navbar .Search{
+		/*display: none;*/
+		left: 60%;
+	}
+	.NavSection .Navbar .NavPages{
+		right: 50px;
+	}
+
+}
+@media only screen and (max-width: 880px) {
+	.NavSection .Navbar .Search{
+		display: none;
+	}
+}
+@media only screen and (max-width: 600px) {
+		.NavSection .Navbar .SiteLogo{
+			font-size: 14px;
+			left: 30px;
+		}
+		.NavSection .Navbar .SiteLogo img{
+			width: 40px;
+		}
+		.NavSection .Navbar .SiteLogo h1{
+			margin-top: 9px;
+		}
+		.NavSection .Navbar .NavPages{
+			right: 30px;
+		}
+		.NavSection .Navbar .NavPages h1{
+			font-size: 14px;
+		}
+	}
+	@media only screen and (max-width: 500px) {
+
+		.NavSection .Navbar .SiteLogo{
+			left: 5px;
+			letter-spacing: 1px;
+			font-size: 10px;
+		}	
+		.NavSection .Navbar .SiteLogo h1{
+			margin-top: 5px;
+		}
+		.AccountDropClass .AccountDrop{
+			right: -10px;
+		}
+		.NavSection .Navbar .SiteLogo img{
+			width: 30px;
+		}
+		.NavSection .Navbar .NavPages{
+			right: 10px;
+		}
+		.NavSection .Navbar .NavPages h1{
+			font-size: 12px;
+			margin: 0px 3px;
+		}
+		.NavSection .Navbar .NavPages .cart i{
+			margin-right: 3px;
+		}
+		.MainImgText h1{
+			margin: 2px;
+		}
+		.AccountDropSection{
+			left: -55px;
+		}
+		.AccountDropSection a{
+			font-size: 15px;
+			height: 30px;
+		}
+		.MainImgText .toptext{
+			letter-spacing: 2px;
+			font-size: 16px;
+		}
+		.MainImgText .TextOffer{
+			font-size: 20px;
+		}
+		.MainImgText .TextBtn p{
+			width: 80px;
+			font-size: 14px;
+			height: 30px;
+			margin: 10px 10px;
+		}
+		.ProductSection .InnerProductSection .ProductText{
+			top: 30px;
+		}
+		.ProductSection .InnerProductSection .ProductText h1{
+			font-size: 16px;
+		}
+		.ProductSection .InnerProductSection .ProductsUpperDiv{
+			top: 50px;
+		}
+		.ProductSection .InnerProductSection .ProductsUpperDiv .Box{
+			width: 200px;
+		}
+		.ProductSection .InnerProductSection .ProductsUpperDiv .Box .Descrypton h2{
+			font-size: 10px;
+		}
+		.ProductSection .InnerProductSection .ProductsUpperDiv .Box .Descrypton h3{
+			font-size: 14px;
+		}
+
+	}
+
+
+
+	/*			 Product Section			*/
+
+
+@media only screen and (max-width: 1259px) {
+
+	.ProductViewSection .ProductActionBox{
+		align-items: center;
+		margin-top: -100px;
+	}
+
+
+
+}
+@media only screen and (max-width: 500px) {
+	.ProductViewSection .FlexBox{
+		width: 310px;
+		height: 500px;	
+	}
+	.ProductViewSection .ImageBox .SmallImageSection{
+		/*height: 300px;*/
+	}
+	.ProductViewSection .ImageBox .SmallImageSection .SmallImg{
+		width: 90px;
+		height: 60px;
+	}
+	.ProductViewSection .ProductActionBox .Dscyptn{
+		width: 280px;
+	}
+	.ProductViewSection .ProductActionBox .Action{
+		width: 300px;
+		height: 55px;
+		margin-top: -25px;
+	}
+	.ProductActionBox .Action button{
+		font-size: 16px;
+	}
+}
+
+/*Account Login Sign Up*/
+@media only screen and (max-width: 320px) {
+	.InnerAccountSection .SignInForm{
+		height: 100%;
+	}
+	.SignUpFormDeafult{
+		margin: 15px 0px;
+	}
+	.InnerAccountSection .SignInForm .SignUpTable .TableRows{
+		margin: 10px 0px;
+	}
+	
+}
+@media only screen and (max-width: 500px) {
+	.ErrorSection{
+		width: 240px;
+		height: 150px;
+	}
+	.ErrorSection div{
+		font-size:10px; 
+	}
+
+}
+
+
+/*View Cart */
+
+
+@media only screen and (max-width: 900px) {
+
+	.CartData .CartOrder{
+		justify-content: center;
+	}
+	.CartData .CartOrder button{
+		position: static;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.innerViewCart .CartPrice{
+		width: 310px;
+		height: 500px;
+		right: -40px;
+	}
+	#ResPriceDetail{
+		top: 65%;
+		right: -60px;
+	}
+	.innerViewCart .CartData{
+		width: 310px;
+	}
+	.CartData .InnerCartData{
+		margin: 25px 0px;
+	}
+	.CartData .CartHeader h1{
+		font-size: 15px;
+	}
+	.CartData .CartMainData .MainDataFlex{
+		margin:10px 5px;
+	}
+	.CartData .CartMainData .MainDataFlex1{
+		width: 150px;
+	}
+	.MainDataFlex2 .MainDataFlex2Data h1{
+		font-size: 14px;
+	}
+	.MainDataFlex2 .MainDataFlex2Data h2{
+		font-size: 1px;
+	}
+	.MainDataFlex2 .MainDataFlex2Btns{
+		position: absolute;
+		/*bottom: 10px;*/
+		margin-top: -30px;
+	}
+	.MainDataFlex2 .MainDataFlex2Btns a{
+		margin: 0px 5px;
+		font-size: 10px;
+		letter-spacing: 0px;
+	
+	}
+}

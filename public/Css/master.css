@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: rgba(0,0,0,.03);
+	font-family: 'Mukta', sans-serif;
+}
+.NavSection{
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	height: 60px;
+	color: white;
+	letter-spacing: 2px;
+	background: rgba(51,0,102,.9);
+	box-shadow: 0px 4px 4px rgba(0,0,0,.8);
+}
+.NavSection .Navbar{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+.NavSection .Navbar .SiteLogo{
+	position: absolute;
+	left: 100px;
+	font-family: 'Lobster', cursive;
+	letter-spacing: 3px;
+	font-size: 18px;
+	display: flex;
+	cursor: pointer;
+}
+
+.NavSection .Navbar .SiteLogo img{
+	width: 50px;
+	/*height: 20px;*/
+	margin-right: 6px;
+}
+.NavSection .Navbar .SiteLogo h1{
+	margin-top: 10px;
+	position: relative;
+	opacity: .95;
+	/*letter-spacing: 5px !important;*/
+}
+.NavSection .Navbar .SiteLogo h1::after{
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: white;
+	left: 50%;
+	opacity: .7;
+	bottom: 0px;
+	transition: .2s ease-in;
+}
+.NavSection .Navbar .SiteLogo h1:hover::after{
+	width: 100%;
+	left: 0%;
+}
+.NavSection .Navbar .Search{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.NavSection .Navbar .Search input{
+	position: relative;
+	width: 260px;
+	height: 37px;
+	border-radius: 10px;
+	outline: none;
+	color: white;
+	/*font-size: 18px;*/
+	opacity: 0.8;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border:hidden;
+	/*box-shadow: 0px 2px 2px rgba(255,255,255,.6);*/
+	background: rgba(0,0,0,.4);
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.NavSection .Navbar .Search input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: .6;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 13px;
+}
+.NavSection .Navbar .Search i{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	opacity: .6;
+}
+/**/
+.NavSection .Navbar .NavPages{
+	position: absolute;
+	right: 150px;
+	display: flex;
+	flex-direction: row;
+
+}
+.NavSection .Navbar .NavPages .cart i{
+	margin-right: 6px;
+	color: yellow;
+	transition: .2s ease-in;
+	position: relative;
+}
+.NavSection .Navbar .NavPages .cart i .CartCount{
+	position: absolute;
+	top: -13px;
+	left: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	padding: 4px;
+	background: red;
+	text-align: center;
+	border-radius: 200%;
+}
+.NavSection .Navbar .NavPages h1{
+	margin:0px 11px;	
+	font-size: 16px;
+	cursor: pointer;
+	opacity: .95;
+
+}
+.NavSection .Navbar .NavPages .login i{
+	margin-right: 6px;
+	color: skyblue;
+	transition: .2s ease-in;
+}
+.AccountDropClass{
+	position: relative;
+
+}
+.AccountDropClass::after{
+	position: absolute;
+	content: "";
+	color: white;
+	background: white;
+	width: 0%;
+	height: 1px;
+	left: 50%;
+	bottom: 0;
+	transition: .2s ease-out;
+}
+.AccountDropClass:hover::after{
+	width: 100%;
+	left: 0%;
+
+}
+.AccountDropClass .AccountDrop{
+	position: absolute;
+	right: -16px;
+	top: 5px;
+}
+.AccountDropClass .Icon{
+	margin-right: 3px;
+}
+.AccountDropSection{
+	position: absolute;
+	top: 28px;
+	left: -20px;
+	display: none;
+	overflow: hidden;
+	flex-direction: column;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom: 4px solid rgb(51,0,102);
+	animation: dropppp .1s ease-out;
+}
+@keyframes dropppp{
+  0%{
+    transform:scaleY(0);
+  }
+  100%{
+    transform: scaleY(1);
+  }
+}
+.AccountDropSection a{
+	background: black;
+	display: flex;
+	align-items: center;
+	float: right;
+	height: 35px;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	font-weight: normal;
+	transition: .1s ease-out;
+}
+.AccountDropSection a i{
+	margin-right: 5px;
+	font-size: 13px;
+	/*color: skyblue;*/
+	margin-left: 10px;
+}
+.AccountDropSection a:hover{
+	background: rgba(51,0,102,.9);
+	color: white;
+}

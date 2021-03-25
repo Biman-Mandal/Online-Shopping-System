@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&display=swap');
+.AccountSection{
+	/*position: relative;*/
+	/*background: red;*/
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.ErrorSection{
+	z-index: 50;
+	position: absolute;
+	/*background: red;*/
+	width: 330px;
+	height: 360px;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	overflow: hidden;
+	transition: .5s ease-out;
+}
+.ErrorSection div{
+	margin: .1px;
+	background: rgba(0,0,0,.8);
+	color: white;
+	width:320px;
+	overflow: hidden;
+	height: 50px;
+	display: flex;
+	font-size: 11px;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+	animation: .5s example ease-in;
+	border-top-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+
+}
+.ErrorSection #Cross{
+	width: 50px !important;
+	top: 0;
+	margin-left: 260px;
+	margin-bottom:  2px;
+	font-size: 20px;
+	color: white;
+	border-radius: 8px;
+	cursor: pointer;
+	right: 0;
+}
+@keyframes example {
+  from {
+  	transform: translateX(100%);
+  }
+  to {
+  	transform: translateX(0%);
+  }
+}
+.InnerAccountSection{
+	font-family: 'Shippori Mincho B1', serif;
+	width: 0%;
+	background: white;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 60px;
+	overflow: hidden;
+	transition: .3s ease-out;
+}
+
+.InnerAccountSection .SignInForm{
+	width: 70%;
+	height: 100%;
+	/*border: 1px solid black;*/
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: .1s ease-in;
+}
+.InnerAccountSection .SignInForm .SignUpText{
+	/*position: absolute;
+	top: 20px;
+	left: 38px;*/
+	
+}
+.InnerAccountSection .SignInForm .SignUpText h1{
+	font-size:18px;
+	letter-spacing: 1px;
+	/*font-weight: bold !important; */
+	text-shadow: 0px 1px 1px black;
+	position: relative;
+}
+.InnerAccountSection .SignInForm .SignUpText h1::after{
+	position: absolute;
+	content: "";
+	background-image: linear-gradient(to right, red , skyblue);
+	width: 60px;
+	height: 2px;
+	bottom: -5px;
+	left: 0;
+}
+.InnerAccountSection .SignInForm .SignUpTable{
+	position: absolute;
+	top: 0px;	
+}
+.SignUpFormDeafult{
+	margin: 20px 0px;
+}
+.InnerAccountSection .SignInForm .SignUpTable .TableRows{
+	margin: 20px 0px;
+	width: 300px;
+}
+.InnerAccountSection .SignInForm .SignUpTable .TableRows input{
+	width: 250px;
+	height: 30px;
+	background: rgba(0,0,0,.05);
+	border: none;
+	font-weight: bold;
+	letter-spacing: .5px;
+	outline: none;
+}
+.InnerAccountSection .SignInForm .SignUpTable .TableRows p{
+	margin-bottom: 5px;
+	letter-spacing: .5px;
+	text-shadow: 0px 1px 1px rgba(0,0,0,.6);
+
+}
+.InnerAccountSection .SignInForm .SignUpTable .TableRows input:focus{
+	 box-shadow: 0 0 5px black;
+ 	 border: 1px solid black;
+}
+.InnerAccountSection .SignInForm .SignUpTable .TableRows .SubmitBtn{
+	font-size: 16px;
+	letter-spacing: 1px;
+	background: black;
+	color: white;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255 ,.7);
+	cursor: pointer;
+}
+.InnerAccountSection .OtherSignUpOption{
+	/*position: absolute;
+	bottom: 128px;
+	left: 44px;*/
+	color: rgba(0,0,0,.7);
+	/*font-weight: bold;*/
+	text-shadow: 0px 1px 2px rgba(0,0,0,.5);
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+.InnerAccountSection .SocialApiLink{
+	/*position: absolute;
+	bottom: 68px;*/
+	display: flex;
+	flex-direction: row;
+	/*background: black;*/
+	width: 250px;
+	/*left: 0;*/
+	margin-top: -5px;
+	height: 50px;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+}
+.InnerAccountSection .SocialApiLink i{
+	padding: 20px 50px;
+	/*background: red;*/
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+	margin: 0px 4px;
+	border-radius: 10px;
+
+}
+.InnerAccountSection .SocialApiLink .facebook{
+	background: blue;
+}
+.InnerAccountSection .SocialApiLink .google{
+	background: #FD592B;
+}
+.InnerAccountSection .CreateAccount{
+	margin-top: -15px;
+}
+.InnerAccountSection .CreateAccount p{
+	color: rgba(0,0,0,.7);
+	text-shadow: 0px 1px 2px rgba(0,0,0,.5);
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+.InnerAccountSection .CreateAccount p .Question{
+	font-size: 22px;
+	/*font-weight: bold;*/
+	color: red;
+}
+.InnerAccountSection p .createOne{
+	font-size: 13px !important;
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+}
+.createOne1{
+	font-family: 'Shippori Mincho B1', serif;
+	position: absolute;
+	bottom: 30px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 15px !important;
+	text-decoration: underline;
+	color: white;
+	cursor: pointer;
+	padding: 7px;
+	background: black;
+	border-radius: 6px;
+}
+/*Login Section*/
+.LoginInnerSection{
+	width: 600px;
+	height: 100%;
+	background: white;
+	/*display: none;*/
+	transition: .3s ease-in;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	
+}
+.LoginFormSection{
+	position: relative;
+	overflow: hidden;
+}
+.LoginFormSection .LoginPos{
+	margin: 20px 0px;
+}
+.UpperText p{
+	position: relative;
+	font-size:18px;
+	letter-spacing: 1px;
+	/*font-weight: bold !important; */
+	text-shadow: 0px 1px 1px black;
+}
+.UpperText p::after{
+	position: absolute;
+	content: "";
+	background-image: linear-gradient(to right, red , skyblue);
+	width: 30px;
+	height: 2px;
+	bottom: -5px;
+	left: 0;
+}
+.LoginForm .Login{
+	margin: 20px 0px;
+}
+.LoginForm .Login input{
+	width: 250px;
+	height: 30px;
+	background: rgba(0,0,0,.05);
+	border: none;
+	font-weight: bold;
+	letter-spacing: .5px;
+	outline: none;	
+}
+.LoginForm .Login input:focus{
+	 box-shadow: 0 0 5px black;
+ 	 border: 1px solid black;
+ 	}
+.LoginForm .Login p{
+	margin-bottom: 5px;
+	letter-spacing: .5px;
+	text-shadow: 0px 1px 1px rgba(0,0,0,.6);
+}
+.LoginForm .LoginBtn input{
+	font-size: 16px;
+	letter-spacing: 1px;
+	background: black;
+	color: white;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255 ,.7);
+	cursor: pointer;
+}
+.LoginFormSection .OthersSection div{
+	/*margin: 5px 0px;*/
+} 
+.OthersSection .OtherApitext{
+	color: rgba(0,0,0,.7);
+	text-shadow: 0px 1px 2px rgba(0,0,0,.5);
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+.OthersSection .ApiLinkLogin{
+	display: flex;
+	flex-direction: row;
+	/*background: black;*/
+	width: 250px;
+	/*left: 0;*/
+	height: 50px;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+}
+.OthersSection .ApiLinkLogin i{
+	padding: 20px 50px;
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+	border-radius: 10px;
+	margin: 0px 4px;
+
+}
+.OthersSection .ApiLinkLogin .facebook{
+	background: blue;
+}
+.OthersSection .ApiLinkLogin .google{
+	background: #FD592B;
+}
+.OthersSection .NewHere{
+	margin-top: 10px;
+}
+.OthersSection .NewHere p{
+	color: rgba(0,0,0,.7);
+	text-shadow: 0px 1px 2px rgba(0,0,0,.5);
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+.OthersSection .NewHere .Question{
+	font-size: 22px;
+	
+	color: red;
+}
+.OthersSection .NewHere .Click{
+	font-size: 13px !important;
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+}
+.LoginSignQuick{
+
+}
+
+
+/*Verify Section*/
+
+.VerifySection{
+	background: red;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+}

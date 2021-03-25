@@ -1,0 +1,361 @@
+.ViewCartSection{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	/*background: red;*/
+}
+
+.innerViewCart{
+	position: absolute;
+	width: 99%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	/*background: green;*/
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.innerViewCart .CartBoxs{
+	margin:20px 20px;
+	/*background: yellow;*/
+}
+.innerViewCart .CartData{
+	top: 50px;
+	width: 700px;
+	height: 100%;
+	/*overflow: hidden;*/
+	position: relative;
+}
+/*
+CartMainData
+CartOrder*/
+.CartData .CartHeader{
+	/*position: absolute;*/
+	width: 100%;
+	height: 70px;
+	background: rgba(0,0,51,.7);
+	border-top-left-radius: 10px;
+	top: 0px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 4px 4px rgba(0,0,0,.8);
+}
+.CartData .InnerCartData{
+	margin: 15px 0px;
+}
+.CartData .CartHeader h1{
+	color: white;
+	letter-spacing: 2px;
+	margin-left: 20px;
+	font-size: 20px;
+}
+.CartData .CartMainData{
+	background: rgba(255,255,255,.5);
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+}
+.CartData .CartMainData .MainDataFlex{
+	margin: 0px 10px;
+	/*background: red;*/
+}
+.CartData .CartMainData .MainDataFlex1{
+	width: 200px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.CartData .CartMainData .MainDataFlex1 img{
+	/*object-fit: center;*/
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+.CartData .CartMainData .MainDataFlex2{
+	width: 67%;
+	height: 100%;
+}
+.MainDataFlex2 .innerFlex{
+	margin: 5px 0px;
+	/*background: white;*/
+}
+.MainDataFlex2 .MainDataFlex2Data{
+	width: 100%;
+	height: 50%;
+}
+.MainDataFlex2 .MainDataFlex2Data h1{
+	font-size: 18px;
+	letter-spacing: 1px;
+	opacity: .9;
+}
+.MainDataFlex2 .MainDataFlex2Data p{
+	letter-spacing: 1px;
+}
+.MainDataFlex2 .MainDataFlex2Data h2{
+	font-size: 18px;
+}
+.MainDataFlex2 .MainDataFlex2Data p span{
+	letter-spacing: 1.5px;
+	font-weight: bold;
+	color: lightgreen;
+}
+.MainDataFlex2 .MainDataFlex2Data h4{
+	font-weight: normal;
+}
+.MainDataFlex2 .MainDataFlex2Data h4 span{
+	color: red;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+}
+.MainDataFlex2 .MainDataFlex2Btns{
+	width: 100%;
+	height: 30%;
+	display: flex;
+	align-items: center;
+	/*background: white;*/
+}
+.MainDataFlex2 .MainDataFlex2Btns a{
+	margin: 0px 10px;
+	text-decoration: none;
+	color: black;
+	letter-spacing: 1px;
+	font-weight: bold;
+	position: relative;
+}
+.MainDataFlex2 .MainDataFlex2Btns a::after{
+	position: absolute;
+	content: "";
+	background: linear-gradient(to right, black , skyblue);
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	transition: .2s ease-out;
+}
+.MainDataFlex2 .MainDataFlex2Btns a:hover::after{
+	width: 0%;
+}
+
+.CartData .CartOrder{
+	width: 100%;
+	height: 60px;
+	background: rgba(0,0,0,.7);
+	position: relative;
+	display: flex;
+	align-items: center;
+	/*border-top-left-radius: 10px;*/
+	border-top-right-radius: 10px;
+}
+.CartData .CartOrder button{
+	position: absolute;
+	right: 20px;
+	width: 170px;
+	height: 45px;
+	color: white;
+	font-family: 'Mukta', sans-serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: bold;	
+	text-shadow: 0px 2px 5px rgba(0,0,0,.6);
+	cursor: pointer;
+	border: none;
+	background: #FF1E1E;
+	border-top-right-radius: 10px;
+
+}
+.CartData .CartOrder button:focus{
+	outline: none;
+}
+.CartData .CartOrder button i{
+	margin-right: 6px;
+	transition: .3s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+.innerViewCart .CartPrice{
+	width: 500px;
+	height: 70vh;
+	bottom: 0;
+	/*position: relative;*/
+	/*overflow: hidden;*/
+
+}
+.CartPrice .CartPriceHeader{
+	width: 100%;
+	height: 70px;
+	background: rgba(0,0,51,.7);
+	top: 0px;
+	display: flex;
+	align-items: center;
+	border-top-left-radius: 10px;
+	box-shadow: 0px 4px 4px rgba(0,0,0,.8);
+
+}
+.CartPrice .CartInnerPrice{
+	margin: 10px 0px;
+}
+.CartPrice .CartPriceHeader h1{
+	color: white;
+	letter-spacing: 2px;
+	margin-left: 20px;
+	font-size: 20px;
+}
+
+.CartPrice .CalSection{
+	width: 100%;
+	background: rgba(255,255,255,.5);
+	height: 50%;
+}
+.CartPrice .TotalSection{
+	width: 100%;
+	height: 13%;
+	background: rgba(0,0,0,.3);
+
+}
+.CartPrice .PayTypeNote{
+	width: 100%;
+	height: 12%;
+	/*background: white;*/
+	border-bottom-right-radius: 10px;
+
+}
+/*
+*/
+.CartPrice .CalSection .CalType{
+	margin:0px 20px;
+}
+.CartPrice .CalSection .CalType h4,.CartPrice .CalSection .CalType p{
+	display: inline-block;
+	margin: 5px 18px;
+	/*padding: 10px;*/
+}
+.CartPrice .CalSection .CalType h4{
+	font-size: 18px;
+	color: rgba(0,0,0,.9);
+	letter-spacing: 1px;
+}
+.CartPrice .CalSection .CalType p{
+	float: right;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.TotalSection h4,.TotalSection p{
+	display: inline-block;
+	margin: 15px 18px;
+	letter-spacing: 1px;
+}
+.TotalSection p{
+	float: right;
+}
+.PayTypeNote h4{
+	letter-spacing: 1px;
+	font-size:15px;
+	padding: 10px 0px;
+	/*background: red;*/
+	opacity: .8;
+	letter-spacing: 1px;
+}
+.PayTypeNote h4 i{
+	margin:0px 6px;
+	color: darkgreen;
+
+}
+#ResPriceDetail{
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	right: 0;
+	transform: rotate(270deg);
+	background: black;
+	color: white;
+	padding: 10px 15px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	border-radius: 10px;
+	/*box-shadow:  2px 2px darkred;*/
+}
+#ResPriceDetail i{
+	transform: rotate(90deg);
+	position: absolute;
+	left: 44%;
+	/*top: -30%;*/
+	color: red;
+	font-weight: bold;
+	font-size: 22px;
+	animation: drop .7s ease-in infinite;
+}
+@keyframes drop{
+	0%{
+		top: -10%;
+		color: white;
+	}
+	100%{
+		top: -40%;
+		color: red;
+	}
+}
+#CrossID{
+	display: none;
+}
+#CartPriceID{
+	display: none;
+}
+@media only screen and (max-width: 1292px) {
+	#ResPriceDetail{
+		display: block;
+	}
+	.innerViewCart .CartPrice{
+		position: fixed;
+		right: 0;
+		background: white;
+		/*border-radius: 20px;*/
+		/*border:2px solid darkblue;*/
+		box-shadow: 0px 20px 40px rgba(51,0,153,0.5);
+		display: none;
+		animation: ResCartPrice .4s ease-out;
+	}
+	@keyframes ResCartPrice{
+	  0%{
+	    right: -100%;
+	  }
+	  100%{
+	    right: 0%; 
+	  }
+	}
+	.PriceDetailRes{
+	position: fixed;
+	background: white;
+	border-radius: 20px;
+	/*display: none;*/
+	}
+	#CrossID{
+		cursor: pointer;
+		display: block;
+		position: absolute;
+		left: -11%;
+		/*top: 40%;*/
+		font-size: 26px;
+		padding: 10px 15px;
+		background: rgba(0,0,0,.8);
+		color: white;
+		border-top-left-radius: 10px;
+		box-shadow: 0px 5px 5px rgba(51,0,153,0.5);
+		/*animation: CrossResCart 10s linear infinite;*/
+	}
+	
+}
+	
+}

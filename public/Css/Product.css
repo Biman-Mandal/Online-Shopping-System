@@ -1,0 +1,165 @@
+.ProductViewSection{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	/*background: black;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	top: 60px;
+}
+.ProductViewSection .FlexBox{
+	width: 590px;
+	height: 550px;
+	/*background: red;*/
+	margin: 20px 20px;
+	display: flex;
+	position: relative;
+}
+.ProductViewSection .ImageBox{
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+/*SmallImageSection
+BigImageSection*/
+.ProductViewSection .ImageBox .SmallImageSection{
+	width: 115px;
+	height: 460px;
+	/*background: black;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.ProductViewSection .ImageBox .SmallImageSection .SmallImg{
+	width: 100px;
+	height: 80px;
+	/*background: white;*/
+	margin: 4px 0px;
+	cursor: pointer;
+	border:4px solid white;
+}
+.ProductViewSection .ImageBox .SmallImageSection .SmallImg:hover{
+	border:4px solid skyblue;
+}
+.ProductViewSection .ImageBox .ImgSec{
+	margin: 0px 0px;
+}
+.ProductViewSection .ImageBox .BigImageSection{
+	width: 370px;
+	height: 430px;
+	/*background: white;*/
+}
+.ProductViewSection .ProductActionBox{
+	flex-direction: column;
+	/*align-items: center;*/
+	justify-content: center;
+}
+.ProductViewSection .ProductActionBox .Dscyptn{
+	/*position: absolute;*/
+	width: 450px;
+	height: 370px;
+	/*background: white;*/
+	/*left: 0;*/
+	display: flex;
+	flex-direction: column;
+	/*align-items: */
+	justify-content: center;
+	position: relative;
+}
+.ProductViewSection .ProductActionBox .Dscyptn .text{
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin: 5px 0px;
+	text-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+.ProductViewSection .ProductActionBox .Dscyptn h3 span{
+	color: #81E84F;
+}
+.ProductViewSection .ProductActionBox .Dscyptn h3{
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+.ProductViewSection .ProductActionBox .Dscyptn h4{
+	color: rgba(0,0,0,.7);
+	letter-spacing: .7px;
+
+	/*top: 40px;*/
+	/*font-size: 18px;*/
+	/*position: absolute;*/
+}
+.ProductViewSection .ProductActionBox .Dscyptn h5{
+	color: rgba(0,0,0,.6);
+	/*letter-spacing: 1px !important;*/
+	font-size: 15px !important;
+	/*top: 80px;*/
+	/*font-size: 15px;*/
+	/*position: absolute;*/
+}
+.ProductViewSection .ProductActionBox .Dscyptn h6{
+	/*font-size: 20px;*/
+	/*position: absolute;*/
+	opacity: .85;
+	/*top: 120px;*/
+	letter-spacing: 1px !important;
+	/*font-weight: b*/
+	text-shadow: 0px 1px 1px rgba(0,0,0,.5) !important;
+
+}
+.ProductViewSection .ProductActionBox .Dscyptn h6 span{
+	color:#FF1E1E;
+	/*text-shadow: 0px 1px 1px #FF1E1E;*/
+	text-shadow: none;
+}
+.ProductViewSection .ProductActionBox .Action{
+	width: 450px;
+	height: 60px;
+	background: black;
+}
+.ProductViewSection .ProductActionBox .ProductSec{
+	margin: 2px 0px;
+}
+.SmallImg img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.BigImageSection img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	cursor: pointer;
+}
+.ProductActionBox .Action{
+	display: flex;
+	flex-direction: row;
+}
+.ProductActionBox .Action button{
+	width: 50%;
+	color: white;
+	font-family: 'Mukta', sans-serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: bold;	
+	text-shadow: 0px 2px 5px rgba(0,0,0,.6);
+	cursor: pointer;
+}
+.ProductActionBox .Action button:focus{
+	outline: none;
+}
+.ProductActionBox .Action button i{
+	margin-right: 6px;
+	transition: .3s ease-out;
+}
+.ProductActionBox .Action .cart{
+	background: #81E84F;
+	border: none;
+}
+.ProductActionBox .Action .buy{
+	border: none;
+	background: #FF1E1E
+}
+
+/*.Dscyptn*/
